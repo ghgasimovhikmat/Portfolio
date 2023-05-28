@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Section 1 -->
+      <section class="section-1 center" id="section-1">
+        <h1 class="section-1-heading">
+          Software Developer
+        </h1>
+        <!-- <img src="images/hikmat_gasimov.jpeg" alt="John Smith" class="person-img" /> -->
+        <h3 class="person-name">Hikmat Gasimov</h3>
+        <a href="#section-3" class="section-1-btn">Projects</a>
+      </section>
+      <!-- End of Section 1 -->
+
+      <!-- Navbar -->
+      <nav class="navbar center">
+        <a href="#section-1" class="navbar-link">Home</a>
+        <a href="about.html" class="navbar-link">About</a>
+        <a href="#section-3" class="navbar-link">Projects</a>
+        <a href="#section-4" class="navbar-link">Contact</a>
+      </nav>
+
+      <!-- End of Navbar -->
+
+      <!-- Section 2 -->
+      <section class="section-2" id="section-2">
+        <h1 class="section-heading section-2-heading">About Me</h1>
+    
+        <div class="services">
+          <div class="service">
+            <i class="far fa-lightbulb"></i>
+            <h2 class="service-heading">Creative</h2>
+          </div>
+          <div class="service">
+            <i class="fas fa-cut"></i>
+            <h2 class="service-heading">Problem Solving</h2>
+          </div>
+          <div class="service">
+            <i class="fas fa-tachometer-alt"></i>
+            <h2 class="service-heading">Fast</h2>
+          </div>
+          <div class="service">
+            <i class="fas fa-rocket"></i>
+            <h2 class="service-heading">Dynamic</h2>
+          </div>
+        </div>
+      </section>
+      <!-- End of Section 2 -->
+
+      <!-- Section 3 -->
+      <section class="section-3" id="section-3">
+        <h1 class="section-heading section-3-heading">My Projects</h1>
+        <div class="projects-wrapper center">
+          <div class="project">
+            <div class="project-text">
+              <h2 class="project-name">HRManagment</h2>
+              <h4 class="project-technologies">Rest Api / SOLID Principles / MediatR /Automapper/Fluent API</h4>
+            </div>
+            <img src="images/Clean Architecture With dotNET.png" class="project-img" />
+            <a
+              href="https://github.com/ghgasimovhikmat/Net-Api-Solid-and-Clean-Architecture.git "
+              class="project-link"
+              target="_blank"
+              >Source Code</a
+            >
+          </div>
+          <div class="project">
+            <div class="project-text">
+              <h2 class="project-name">Blog App</h2>
+              <h4 class="project-technologies">JAVA 8+ / SPRING BOOT / MVC / HIBERNATE</h4>
+            </div>
+            <img src="images/download.png" class="project-img" />
+            <a
+              href="https://github.com/ghgasimovhikmat/spring-boot-blog-rest-api.git"
+              class="project-link"
+              target="_blank"
+              >Source Code</a
+            >
+          </div>
+          <div class="project">
+            <div class="project-text">
+              <h2 class="project-name">.Net Angular E-commerce</h2>
+              <h4 class="project-technologies">REST API / ANGULAR CLI / EF CORE /SQL</h4>
+            </div>
+            <img src="images/9e007b304c.png" class="project-img" />
+            <a
+              href="https://github.com/ghgasimovhikmat/.Net-Angular.git"
+              class="project-link"
+              target="_blank"
+              >Source Code</a
+            >
+          </div>
+          <div class="project">
+            <div class="project-text">
+              <h2 class="project-name">Spring Cloud</h2>
+              <h4 class="project-technologies">EUREKA SERVER / REST API</h4>
+            </div>
+            <img src="images/spring_cloud_download.png" class="project-img" />
+            <a
+              href="https://github.com/ghgasimovhikmat/SpringCloud.git"
+              class="project-link"
+              target="_blank"
+              >Source Code</a
+            >
+          </div>
+        <div class="project">
+            <div class="project-text">
+              <h2 class="project-name">Pay Compute</h2>
+              <h4 class="project-technologies">EF CORE/LINQ / GIT / SQL / MVC </h4>
+            </div>
+            <img src="images/images.jpg" class="project-img" />
+            <a
+              href="https://github.com/ghgasimovhikmat/Paycompute.git"
+              class="project-link"
+              target="_blank"
+              >Source Code</a
+            >
+             
+          </div>
+          <div class="project">
+            <div class="project-text">
+              <h2 class="project-name">MongoDB - Spring Boot</h2>
+              <h4 class="project-technologies">CRUD / MONGODB COMPAS / WIDE RANGE OF QUERIES </h4>
+            </div>
+            <img src="images/download_spring_mongo.jpg" class="project-img" />
+            <a
+              href="https://github.com/ghgasimovhikmat/springRestApi-MongoDb.git"
+              class="project-link"
+              target="_blank"
+              >Source Code</a
+            >
+          
+      </section>
+      <!-- End of Section 3 -->
+
+      <!-- Section 4 -->
+      <section class="section-4" id="section-4">
+        <h1 class="section-heading section-4-heading">Contact Me</h1>
+        <form action="https://formsubmit.co/6558831313d4768cb3bd40f882d807e9" method="post" class="contact-form center">
+          <input name="name" type="text" placeholder="Name" required/>
+          <input name="email" type="email" placeholder="Clients Email" required/> 
+          <textarea name="message" placeholder="Message" required></textarea>
+          <input type="submit" value="Send" class="contact-form-btn" />
+        </form>
+      </section>
+      <!-- End of Section 4 -->
+
+      <!-- Section 5 -->
+      <footer class="section-5 center">
+        <div class="social-media">
+          <a href="#none" class="social-media-link">
+            <i class="fab fa-github-square"></i>
+          </a>
+          <a href="#none" class="social-media-link">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="#none" class="social-media-link">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a href="#none" class="social-media-link">
+            <i class="fab fa-instagram-square"></i>
+          </a>
+        </div>
+        <p class="copyright">
+          Copyright &copy; CodeAndCreate. All Rights Reserved
+        </p>
+      </footer>
+      <!-- End of Section 5 -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
