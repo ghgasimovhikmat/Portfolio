@@ -1,498 +1,726 @@
 
 /* Reset and Common Styles */
 * {
-  margin: 0;
-  padding: 0;
-  outline: none;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style-type: none;
-  font-family: "Jost", sans-serif;
-  font-weight: 400;
-}
-
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.section-heading {
-  font-size: 5rem;
-  color: #333;
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
-  margin-bottom: 15rem;
-  border-bottom: 0.3rem solid #333;
-  text-shadow: 0.2rem 0.2rem 0.5rem #555;
-}
-/* End of Reset and Common Styles */
-
-/* Section 1 */
-.section-1 {
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.2),
-      rgba(255, 255, 255, 0.3)
-    ),
-    url(images/gradient-ai-cloud-with-broken-pieces.jpg) center no-repeat;
-  background-size: cover;
-  flex-direction: column;
-}
-/* #e41c6f; */
-.section-1-heading {
-  font-size: 6rem;
-  font-weight: 700;
- /*  color: #fff; */
-  background-color: #e3dade;
-  padding: 0 3rem;
-  margin-bottom: 5rem;
-  text-transform: uppercase;
-  letter-spacing: 1rem;
-  border-bottom: 0.3rem solid #fff;
-  text-shadow: 0.2rem 0.2rem 1rem #555;
-  transform: skew(-10deg);
-}
-
-.person-img {
-  width: 25rem;
-  height: 25rem;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 0.7rem dotted #e41c6f;
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 0.5rem;
-  opacity: 0.9;
-}
-
-.person-name {
-  font-size: 2rem;
-  color: #fff; 
-  background-color: #7e5ca8;
-  margin: 5rem 0;
-  padding: 0.5rem 3rem;
-  letter-spacing: 0.3rem;
-  transform: skew(-10deg);
-}
-
-.section-1-btn {
-  font-size: 1.7rem;
-  font-weight: 700;
-  color: #333;
-  background-color: #fff;
-  border: 0.3rem solid #333;
-  padding: 0.5rem 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.3rem;
-}
-/* End of Section 1 */
-
-/* Navbar */
-.navbar {
-  width: 100%;
-  height: 4rem;
-  background-color: #e3dade;
-  box-shadow: 0.2rem 0.2rem 0.5rem #555;
-  position: absolute;
-  z-index: 300;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-}
-
-.navbar-link {
-  font-size: 1.7rem;
-  font-weight: 600;
-  color: #333;
-  margin: 0 3rem;
-  letter-spacing: 0.3rem;
-  text-transform: uppercase;
-  position: relative;
-  transition: color 0.2s;
-}
-
-.change.navbar-link {
-  color: #fff;
-}
-
-.navbar-link:hover {
-  color: #fff;
-}
-
-.navbar-link::before {
-  content: "";
-  width: 0;
-  height: 0.2rem;
-  background-color: #fff;
-  position: absolute;
-  right: -15%;
-  bottom: -0.3rem;
-  transition: width 0.2s;
-}
-
-.change.navbar-link::before {
-  width: 130%;
-}
-
-.navbar-link:hover::before {
-  width: 130%;
-}
-/* End of Navbar */
-
-/* Section 2 */
-.section-2 {
-  width: 100%;
-  height: 100%;
-  padding: 15rem 0 10rem 0;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.progress-bars-wrapper {
-  margin-bottom: 10rem;
-}
-
-.progress-bar {
-  width: 60rem;
-  height: 3rem;
-  background-color: #ccc;
-  margin: 1.5rem 0;
-  border-radius: 0.3rem;
-  box-shadow: 0.2rem 0.2rem 1rem #555;
-  position: relative;
-}
-
-.progress-text {
-  position: absolute;
-  left: 1rem;
-  font-size: 1.5rem;
-  color: #fff;
-}
-
-.progress-text span {
-  margin: 0 0.5rem;
-  font-size: 1.8rem;
-  font-weight: 700;
-}
-
-.progress-percent {
-  width: 0;
-  height: 100%;
-  background-color: #e41c6f;
-  border-radius: 0.3rem;
-  transition: width 0.5s 0.5s ease-in-out;
-}
-
-.services {
-  width: 100%;
-  height: 30vh;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.service {
-  text-align: center;
-}
-
-.service:first-child,
-.service:last-child {
-  align-self: flex-start;
-}
-
-.service i {
-  font-size: 10rem;
-  color: #888;
-  margin-bottom: 2rem;
-  text-shadow: 0.1rem 0.1rem 0.5rem #555;
-}
-
-.service h2 {
-  font-size: 2rem;
-  color: #fff;
-  background-color: #777;
-  width: 25rem;
-  letter-spacing: 0.3rem;
-  transform: skew(-10deg);
-  box-shadow: 0.2rem 0.2rem 0.5rem #555;
-}
-/* End of Section 2 */
-
-/* Section 3 */
-.section-3 {
-  width: 100%;
-  height: 100%;
-  padding: 10rem 0;
-  background-color: #eef;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.projects-wrapper {
-  width: 80%;
-  flex-wrap: wrap;
-}
-
-.project {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem;
-  background-color: #fff;
-  box-shadow: 0.3rem 0.3rem 0.5rem #777;
-  position: relative;
-  overflow: hidden;
-  transition: box-shadow 0.5s;
-}
-
-.project:hover {
-  box-shadow: 1rem 1rem 1rem #777;
-}
-
-.project-text {
-  text-align: center;
-  letter-spacing: 0.1rem;
-  position: absolute;
-  top: -10rem;
-  z-index: 10;
-  transition: top 0.3s;
-}
-
-.project:hover .project-text {
-  top: 5rem;
-  transition: top 0.3s 0.3s;
-}
-
-.project-name {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #333;
-  text-transform: capitalize;
-}
-
-.project-technologies {
-  font-size: 1.8rem;
-  color: #e41c6f;
-}
-
-.project-img {
-  width: 40rem;
-  transition: opacity 0.3s;
-}
-
-.project:hover .project-img {
-  opacity: 0.2;
-}
-
-.project-link {
-  font-size: 2rem;
-  font-weight: 500;
-  color: #333;
-  letter-spacing: 0.1rem;
-  border: 0.3rem solid #e41c6f;
-  padding: 0 1rem;
-  background-color: #fff;
-  position: absolute;
-  bottom: -5rem;
-  transition: bottom 0.3s;
-}
-
-.project:hover .project-link {
-  bottom: 5rem;
-  transition: bottom 0.3s 0.3s;
-}
-/* End of Section 3 */
-
-/* Section 4 */
-.section-4 {
-  width: 100%;
-  height: 70vh;
-  background-color: #333;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.section-4-heading {
-  color: #fff;
-  box-shadow: none;
-  border-color: #fff;
-  margin-bottom: 5rem;
-}
-
-.contact-form {
-  width: 50rem;
-  flex-direction: column;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 0.5rem;
-  margin: 0.5rem 0;
-  background-color: #eef;
-  font-size: 1.5rem;
-  border: 0.2rem solid #7e5ca8;
-  color: #555;
-}
-
-.contact-form textarea {
-  height: 10rem;
-  max-height: 15rem;
-  max-width: 100%;
-}
-
-.contact-form .contact-form-btn {
-  background-color: rgba(148, 146, 146, 0.986);
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 1rem;
-  cursor: pointer;
-}
-/* End of Section 4 */
-
-/* Section 5 */
-.section-5 {
-  width: 100%;
-  height: 30vh;
-  background-color: #222;
-  flex-direction: column;
-}
-
-.social-media {
-  margin-bottom: 5rem;
-}
-
-.social-media-link {
-  margin: 0 2rem;
-  padding: 0.7rem;
-  background-color: #7e5ca8;
-  border-radius: 0.5rem;
-  display: inline-block;
-}
-
-.social-media-link i {
-  font-size: 3rem;
-  color: #fff;
-}
-
-.copyright {
-  color: #aaa;
-  font-size: 2rem;
-  letter-spacing: 0.2rem;
-  font-weight: 300;
-  text-align: center;
-}
-img[src$=".jpg"] {
-  width: 400px;
-  height: 250px;
-}
-img[src$=".png"] {
-  width: 400px;
-  height: 250px;
-}
-
-/* End of Section 5 */
-
-/* Responsive */
-@media (max-width: 1200px) {
-  .services {
-    height: auto;
-    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
   }
-
-  .service {
-    margin: 3rem 2rem;
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
   }
-
-  .section-4 {
-    height: 80vh;
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-}
-
-@media (max-width: 800px) {
+  
+  .section-heading {
+    font-size: 5rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-bottom: 15rem;
+    border-bottom: 0.3rem solid #333;
+    text-shadow: 0.2rem 0.2rem 0.5rem #555;
+  }
+  
+  /* End of Reset and Common Styles */
+  
+  /* Section 1 */
+  .section-1 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.3)
+      ),
+      url(images/gradient-ai-cloud-with-broken-pieces.jpg) center no-repeat;
+    background-size: cover;
+    flex-direction: column;
+  }
+  /* #e41c6f; */
   .section-1-heading {
-    font-size: 4rem;
+    font-size: 6rem;
+    font-weight: 700;
+   /*  color: #fff; */
+    background-color: #e3dade;
+    padding: 0 3rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    border-bottom: 0.3rem solid #fff;
+    text-shadow: 0.2rem 0.2rem 1rem #555;
+    transform: skew(-10deg);
   }
-
-  .progress-bar {
-    width: 50rem;
+  
+  .person-img {
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 0.7rem dotted #e41c6f;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0.5rem;
+    opacity: 0.9;
   }
+  
+  .person-name {
+    font-size: 2rem;
+    color: #fff; 
+    background-color: #7e5ca8;
+    margin: 5rem 0;
+    padding: 0.5rem 3rem;
+    letter-spacing: 0.3rem;
+    transform: skew(-10deg);
+  }
+  
+  .section-1-btn {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #333;
+    background-color: #fff;
+    border: 0.3rem solid #333;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+  }
+  /* End of Section 1 */
+  
+  /* Navbar */
+  .navbar {
+    width: 100%;
+    height: 4rem;
+    background-color: #e3dade;
+    box-shadow: 0.2rem 0.2rem 0.5rem #555;
+    position: absolute;
+    z-index: 300;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+  }
+  .navbar-brand,
+.nav-item.nav-link {
+  font-size: 2rem; /* Adjust the font size as needed */
 }
-
-@media (max-width: 600px) {
-  .section-1-heading {
-    font-size: 3rem;
-  }
-
   .navbar-link {
-    margin: 0 2rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0 3rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.2s;
   }
-
+  
+  .change.navbar-link {
+    color: #fff;
+  }
+  
+  .navbar-link:hover {
+    color: #fff;
+  }
+  
+  .navbar-link::before {
+    content: "";
+    width: 0;
+    height: 0.2rem;
+    background-color: #fff;
+    position: absolute;
+    right: -15%;
+    bottom: -0.3rem;
+    transition: width 0.2s;
+  }
+  
+  .change.navbar-link::before {
+    width: 130%;
+  }
+  
+  .navbar-link:hover::before {
+    width: 130%;
+  }
+  /* End of Navbar */
+  
+  /* Section 2 */
   .section-2 {
-    padding: 10rem;
+    width: 100%;
+    height: 100%;
+    padding: 15rem 0 10rem 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
-  .section-2-heading {
+  
+  .progress-bars-wrapper {
     margin-bottom: 10rem;
   }
-
+  
   .progress-bar {
-    width: 45rem;
+    width: 60rem;
+    height: 3rem;
+    background-color: #ccc;
+    margin: 1.5rem 0;
+    border-radius: 0.3rem;
+    box-shadow: 0.2rem 0.2rem 1rem #555;
+    position: relative;
+  }
+  
+  .progress-text {
+    position: absolute;
+    left: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+  .progress-text span {
+    margin: 0 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  
+  .progress-percent {
+    width: 0;
+    height: 100%;
+    background-color: #e41c6f;
+    border-radius: 0.3rem;
+    transition: width 0.5s 0.5s ease-in-out;
+  }
+  
+  .services {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .service {
+    text-align: center;
+  }
+  
+  .service:first-child,
+  .service:last-child {
+    align-self: flex-start;
+  }
+  
+  .service i {
+    font-size: 10rem;
+    color: #888;
+    margin-bottom: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem #555;
+  }
+  
+  .service h2 {
+    font-size: 2rem;
+    color: #fff;
+    background-color: #777;
+    width: 25rem;
+    letter-spacing: 0.3rem;
+    transform: skew(-10deg);
+    box-shadow: 0.2rem 0.2rem 0.5rem #555;
+  }
+  /* End of Section 2 */
+  
+  /* Section 3 */
+  .section-3 {
+    width: 100%;
+    padding: 10rem 0;
+    background-color: #eef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .projects-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; /* Adjust the gap between the projects as needed */
+    max-width: 1200px;
+    margin: auto;
   }
 
+ .project {
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.project-link {
+  display: inline-block; /* Ensures the link is treated as a block for padding purposes */
+  font-size: 16px;
+  font-weight: 500;
+  color: #007bff; /* Bootstrap primary color for links */
+  background-color: #ffffff; /* Adds a white background */
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 2px solid #007bff; /* Border matching the link color */
+  border-radius: 5px; /* Rounded corners for the button */
+  transition: all 0.3s ease;
+  margin-top: 10px; /* Adds space above the link */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for better visibility */
+  position: relative; /* Adjusted from absolute to relative */
+  top: auto; /* Reset any specific top positioning */
+  left: auto; /* Reset any specific left positioning */
+  transform: none; /* Clear any transforms that might affect positioning */
+}
+
+.project-link:hover,
+.project-link:focus {
+  color: #fff;
+  background-color: #007bff;
+  text-decoration: none; /* Removes underline on hover/focus */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Darker shadow on hover for a "lifted" effect */
+}
+
+  
+  /* When the project is hovered over, the project link becomes visible */
+  .project:hover .project-link {
+    opacity:  1;
+    visibility: visible;
+    border-color: #e41c6f; /* Change border color on hover */
+    background-color: #ffffff; /* Change background color on hover */
+    color: #333;
+  }
+  
   .project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Additional styling for the project card hover state */
+  .project:hover .project-img {
+    transform: scale(1.03); 
+  }
+  
+  
+  /* Hover effect for the project card */
+  .project:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  /*.project:hover {
+    box-shadow: 1rem 1rem 1rem #777;
+  }*/
+  
+  .project-text {
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.9);
     width: 100%;
   }
 
+  .project:hover .project-text {
+    transform: translateY(0);
+  }
+  /**/
+  
+
+
+
+
+/* Card Design */
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  width: 300px; /* Adjust the width as necessary */
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card.project img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block; /* Remove any default inline spacing */
+}
+
+.card .card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.card .card-body .instructor-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  margin: 10px auto;
+}
+
+.card .card-body .course-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card .card-body .course-description {
+  font-size: 14px;
+  color: #6c757d; /* Muted color  margin-bottom: 15px;*/
+  
+  margin-bottom: 20px; /* Space between description and link */
+}
+
+.card .card-body .buy-btn {
+  background-color: #00b4d8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card .card-body .buy-btn:hover {
+  background-color: #0096c7;
+}
+
+/* Responsive Grid */
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Adjust the gap and padding as necessary */
+
+
+
+
+  /**/
+  .project-name {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-technologies {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project:hover .project-img {
+    opacity: 0.2;
+  }
+
+  .project-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #007bff; /* Bootstrap primary color for links */
+    background-color: transparent;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid #007bff; /* Border matching the link color */
+    border-radius: 5px; /* Rounded corners for the button */
+    transition: all 0.3s ease;
+  }
+  .project-link:hover,
+  .project-link:focus {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none; /* Remove underline on hover/focus */
+  }
+  .project:hover .project-link {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* End of Section 3 */
+  
+  /* Section 4 */
+  .section-4 {
+    width: 100%;
+    height: 70vh;
+    /*  background-color: #333;*/
+    background-color: #343a40; /* Dark background for contrast */
+    padding: 5rem 0; /* More padding for a spacious layout */
+    color: #ffffff; /* Light text for readability */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .section-4-heading {
+   
+    box-shadow: none;
+    border-color: #fff;
+     /*  color: #fff;
+    margin-bottom: 5rem;*/
+  
+    margin-bottom: 3rem; /* Less space to make it tighter */
+    color: #ffffff; /* Ensure heading is light-colored */
+  }
+  
   .contact-form {
-    width: 40rem;
+    width: 50rem;
+    flex-direction: column;
   }
+  
+  .contact-form input,
+  .contact-form textarea {
+    
+    margin-top: 1rem; /* Space between form fields */
+    background-color: #6c757d; /* Darker field backgrounds for contrast */
+    border: 0; /* Remove borders */
+    color: #ffffff; /* Light text for readability */
+    padding: .75rem 1rem; /* Padding inside fields */
 
-  .copyright {
-    width: 70%;
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+   /* Space   background-color: #eef; between color: #555; form fields  border: 0.2rem solid #7e5ca8;*/
+    font-size: 1.5rem;
+    
+    
   }
+  .contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #dee2e6; /* Light placeholders for contrast */
 }
 
-@media (max-width: 500px) {
-  html {
-    font-size: 55%;
+  .contact-form textarea {
+    height: 10rem;
+    max-height: 15rem;
+    max-width: 100%;
   }
-}
+  
+  .contact-form .contact-form-btn {
+   /* background-color: rgba(148, 146, 146, 0.986);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    cursor: pointer;*/
+    text-transform: uppercase;
 
-@media (max-width: 450px) {
-  html {
-    font-size: 45%;
+    background-color: #007bff; /* Use a brand color for the button */
+    letter-spacing: 1rem;
+    color: #ffffff; /* White text on the button */
+    font-size: 1.2rem; /* Larger font size */
+    padding: .75rem 1.5rem; /* Larger button for easier clicking */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded button edges */
+    margin-top: 2rem; /* Space above the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.2s; /* Smooth background color transition */
+    
   }
-
-  .section-1-heading {
-    font-size: 2.5rem;
+  .contact-form-btn:hover {
+    background-color: #0056b3; /* Darker on hover for interaction feedback */
   }
-
-  .navbar-link {
-    margin: 0 1.5rem;
+  /* End of Section 4 */
+  
+  /* Section 5 */
+  .section-5 {
+    width: 100%;
+    height: 30vh;
+    background-color: #222;
+    flex-direction: column;
   }
-
-  .section-2-heading {
+  .footer {
+    background-color: #212928; /* Even darker background for footer */
+    color: #adb5bd; /* Muted text color for less contrast */
+    font-size: 1.4rem;
     text-align: center;
+    padding: 2rem 0; /* Padding top and bottom */
+  }
+  .social-media {
+    margin: 2rem 0;
+  }
+  .social-media-link {
+    margin: 0 1rem;
+    padding: 1rem;
+    border-radius: 50%; /* Circular background for icons */
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white for icons background */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+  }
+  .social-media-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Lighter background on hover */
+    transform: scale(1.1); /* Slightly enlarge icons on hover */
+  }
+  
+  
+  .social-media-link i {
+    color: #fff; /* White color for icons */
+    font-size: 2rem; /* Size of icons */
+  }
+  .social-media a {
+    color: #adb5bd; /* Muted icon colors to match text */
+    margin: 0 1rem; /* Space around icons */
+    transition: color 0.3s; /* Smooth color transition */
   }
 
-  .progress-bar {
-    width: 40rem;
+  .social-media a:hover {
+    color: #ffffff; /* Bright color on hover for interaction feedback */
   }
+  
+  .footer p {
+    margin-top: 1rem;
+    color: #aaa;
+    font-size: 0.9rem; /* Smaller font size for copyright text */
+  }
+  /*
+  .copyright {
+    color: #aaa;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-weight: 300;
+    text-align: center;
+  }*/
+  img[src$=".jpg"] {
+    width: 400px;
+    height: 250px;
+  }
+  img[src$=".png"] {
+    width: 400px;
+    height: 250px;
+  }
+  
+  .btn-outline-light{
+    font-size: 1.8rem; /* Increased font size for filter buttons */
+  }
+  .filter-btn {
+    margin: 0 10px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #fff;
+    color:#000000; /* Default text color */
+    
+  font-size: 1.8rem; /* Increased font size for filter buttons */
+    transition: background-color 0.3s; /* Smooth background color transition */
+  }
+  
+  .filter-btn.active
+  .filter-btn:hover {
+    background-color: #666;
+    color: white;
+  }
+  /* On hover, use a lighter shade of gray instead of the active dark color */
+.filter-btn:not(.active):hover {
+  background-color: #aaaaaa; /* Lighter gray background for hover on non-active buttons */
 }
-/* End of Responsive */
+/* Contact form button adjustments */
+.contact-form .contact-form-btn {
+  padding: 1rem 2rem; /* Adjust padding to make button smaller */
+  font-size: 1.5rem; /* Adjust font size as needed */
+}
+  /* End of Section 5 */
+  
+  /* Responsive */
+  @media (max-width: 1200px) {
+    .services {
+      height: auto;
+      flex-wrap: wrap;
+    }
+  
+    .service {
+      margin: 3rem 2rem;
+    }
+  
+    .section-4 {
+      height: 80vh;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .section-1-heading {
+      font-size: 4rem;
+    }
+  
+    .progress-bar {
+      width: 50rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .section-1-heading {
+      font-size: 3rem;
+    }
+  
+    .navbar-link {
+      margin: 0 2rem;
+      font-size: 1.5rem;
+    }
+  
+    .section-2 {
+      padding: 10rem;
+    }
+  
+    .section-2-heading {
+      margin-bottom: 10rem;
+    }
+  
+    .progress-bar {
+      width: 45rem;
+    }
+  
+    .project-img {
+      width: 100%;
+    }
+  
+    .contact-form {
+      width: 40rem;
+    }
+  
+    .copyright {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    html {
+      font-size: 55%;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    html {
+      font-size: 45%;
+    }
+  
+    .section-1-heading {
+      font-size: 2.5rem;
+    }
+  
+    .navbar-link {
+      margin: 0 1.5rem;
+    }
+  
+    .section-2-heading {
+      text-align: center;
+    }
+  
+    .progress-bar {
+      width: 40rem;
+    }
+  }
+  /* End of Responsive */
+  

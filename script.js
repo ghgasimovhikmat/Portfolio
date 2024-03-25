@@ -1,42 +1,40 @@
-/* const navbar = document.querySelector(".navbar");
-const navbarOffsetTop = navbar.offsetTop;
-const sections = document.querySelectorAll("section");
-const navbarLinks = document.querySelectorAll(".navbar-link");
-const progress = document.querySelector(".progress-bars-wrapper");
-const progressBarPercents = [97, 89, 85, 87, 80, 70, 50];
-
-window.addEventListener("scroll", () => {
-  mainFn();
-});
-
-const mainFn = () => {
-  if (window.pageYOffset >= navbarOffsetTop) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
-
-  sections.forEach((section, i) => {
-    if (window.pageYOffset >= section.offsetTop - 10) {
-      navbarLinks.forEach((navbarLink) => {
-        navbarLink.classList.remove("change");
-      });
-      navbarLinks[i].classList.add("change");
-    }
-  });
-
-  if (window.pageYOffset + window.innerHeight >= progress.offsetTop) {
-    document.querySelectorAll(".progress-percent").forEach((el, i) => {
-      el.style.width = `${progressBarPercents[i]}%`;
-      el.previousElementSibling.firstElementChild.textContent =
-        progressBarPercents[i];
+document.addEventListener('DOMContentLoaded', function() {
+  var filterBtns = document.getElementsByClassName('filter-btn');
+  for (var btn of filterBtns) {
+    btn.addEventListener('click', function() {
+      var current = document.getElementsByClassName('active');
+      if (current.length > 0) {
+        current[0].className = current[0].className.replace(" active", "");
+      }
+      this.className += " active";
+      var category = this.getAttribute('data-category');
+      filterSelection(category);
     });
   }
-};
 
-mainFn();
+  // Function to filter projects
+  function filterSelection(category) {
+    var projects = document.getElementsByClassName('project');
+    for (var i = 0; i < projects.length; i++) {
+      var project = projects[i];
+      if (category === 'all') {
+        project.style.display = "block";
+      } else if (category === 'other') {
+        if (!project.classList.contains('mvc') && !project.classList.contains('angular') && !project.classList.contains('java') &&!project.classList.contains('azure')) {
+          project.style.display = "block";
+        } else {
+          project.style.display = "none";
+        }
+      } else {
+        if (project.classList.contains(category)) {
+          project.style.display = "block";
+        } else {
+          project.style.display = "none";
+        }
+      }
+    }
+  }
 
-window.addEventListener("resize", () => {
-  window.location.reload();
+  // Initialize to show all projects
+  filterSelection('all');
 });
- */

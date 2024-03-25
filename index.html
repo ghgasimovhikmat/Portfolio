@@ -1,268 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <!-- Section 1 -->
-      <section class="section-1 center" id="section-1">
-        <h1 class="section-1-heading">
-          Software Developer
-        </h1>
-        <!-- <img src="images/hikmat_gasimov.jpeg" alt="John Smith" class="person-img" /> -->
-        <h3 class="person-name">Hikmat Gasimov</h3>
-        <a href="#section-3" class="section-1-btn">Projects</a>
-      </section>
-      <!-- End of Section 1 -->
 
-      <!-- Navbar -->
-      <nav class="navbar center">
-        <a href="#section-1" class="navbar-link">Home</a>
-        <a href="about.html" class="navbar-link">About</a>
-        <a href="#section-3" class="navbar-link">Projects</a>
-        <a href="#section-4" class="navbar-link">Contact</a>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-      <!-- End of Navbar -->
+<body>
+  <div class="container-fluid p-0">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="#section-1">Home</a>
+          <a class="nav-item nav-link" href="about.html">About</a>
+          <a class="nav-item nav-link" href="#section-3">Projects</a>
+          <a class="nav-item nav-link" href="#section-4">Contact</a>
+        </div>
+      </div>
+    </nav>
 
-      <!-- Section 2 -->
-      <section class="section-2" id="section-2">
-        <h1 class="section-heading section-2-heading">About Me</h1>
-    
-        <div class="services">
-          <div class="service">
-            <i class="far fa-lightbulb"></i>
-            <h2 class="service-heading">Creative</h2>
+    <!-- Section 1 -->
+    <section
+      class="section-1 d-flex align-items-center justify-content-center flex-column text-center bg-dark text-white vh-100"
+      style="background-image: url('images/back_image.jpg'); background-size: cover;">
+      <h1 class="display-4 font-weight-bold">Full Stack .Net Developer</h1>
+     
+      <a href="#section-3" class="btn btn-outline-light mt-3">Projects</a>
+    </section>
+
+    <!-- Section 2 (About Me) -->
+    <section class="section-2 py-5">
+      <div class="container">
+        <h2 class="section-heading text-center mb-5">About Me</h2>
+        <div class="row">
+          <div class="col-md-3 text-center mb-3">
+            <i class="far fa-lightbulb fa-5x"></i>
+            <h3 class="mt-3">Creative</h3>
           </div>
-          <div class="service">
-            <i class="fas fa-cut"></i>
-            <h2 class="service-heading">Problem Solving</h2>
+          <div class="col-md-3 text-center mb-3">
+            <i class="fas fa-cut fa-5x"></i>
+            <h3 class="mt-3">Problem Solving</h3>
           </div>
-          <div class="service">
-            <i class="fas fa-tachometer-alt"></i>
-            <h2 class="service-heading">Fast</h2>
+          <div class="col-md-3 text-center mb-3">
+            <i class="fas fa-tachometer-alt fa-5x"></i>
+            <h3 class="mt-3">Fast</h3>
           </div>
-          <div class="service">
-            <i class="fas fa-rocket"></i>
-            <h2 class="service-heading">Dynamic</h2>
+          <div class="col-md-3 text-center mb-3">
+            <i class="fas fa-rocket fa-5x"></i>
+            <h3 class="mt-3">Dynamic</h3>
           </div>
         </div>
-      </section>
-      <!-- End of Section 2 -->
+      </div>
+    </section>
 
-      <!-- Section 3 -->
-      <section class="section-3" id="section-3">
-        <h1 class="section-heading section-3-heading">My Projects</h1>
-        <div class="projects-wrapper center">
-     <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">ECommerce</h2>
-              <h4 class="project-technologies">.Net Core /Angular-Typescript /Docker /Database(SqlLite,Redis) </h4>
-            </div>
-            <img src="images/maxresdefault.jpg" class="project-img" />
-            <a
-              href="https://github.com/ghgasimovhikmat/dotnet-angular.git"
-              class="project-link"
-              target="_blank"
-              >Source Code</a
-            >
-          </div>
-          
-             <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">EShopping</h2>
-              <h4 class="project-technologies">Microservices /Net Core /Docker /Angular 2+ /Typescript</h4>
-            </div>
-            <img src="images/download_micro.png" class="project-img" />
-            <a
-              href="https://github.com/ghgasimovhikmat/EShopping.git"
-              class="project-link"
-              target="_blank"
-              >Source Code</a
-            >
-          </div>
-          
-          <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">HRManagment</h2>
-              <h4 class="project-technologies">Rest Api /SOLID Principles /MediatR /Automapper/Fluent API</h4>
-            </div>
-            <img src="images/Clean Architecture With dotNET.png" class="project-img" />
-            <a
-              href="https://github.com/ghgasimovhikmat/Net-Api-Solid-and-Clean-Architecture.git "
-              class="project-link"
-              target="_blank"
-              >Source Code</a
-            >
-          </div>
-          <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">Blog App</h2>
-              <h4 class="project-technologies">JAVA 8+ /SPRING BOOT /MVC /HIBERNATE</h4>
-            </div>
-            <img src="images/images_1.jpg" class="project-img" />
-            <a
-              href="https://github.com/ghgasimovhikmat/spring-boot-blog-rest-api.git"
-              class="project-link"
-              target="_blank"
-              >Source Code</a
-            >
-          </div>
-          <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">.Net Angular E-commerce</h2>
-              <h4 class="project-technologies">ASPNET WEB APIs /ANGULAR CLI /EF CORE /SQL</h4>
-            </div>
-            <img src="images/9e007b304c.png" class="project-img" />
-            <a
-              href="https://github.com/ghgasimovhikmat/.Net-Angular.git"
-              class="project-link"
-              target="_blank"
-              >Source Code</a
-            >
-          </div>
-          <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">Spring Cloud</h2>
-              <h4 class="project-technologies">EUREKA SERVER /REST API</h4>
-            </div>
-            <img src="images/spring_cloud_download.png" class="project-img" />
-            <a
-              href="https://github.com/ghgasimovhikmat/SpringCloud.git"
-              class="project-link"
-              target="_blank"
-              >Source Code</a
-            >
-          </div>
-        <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">Pay Compute</h2>
-              <h4 class="project-technologies">.NET Core /EF CORE /LINQ /GIT /SQL</h4>
-            </div>
-            <img src="images/images.jpg" class="project-img" />
-            <a
-              href="https://github.com/ghgasimovhikmat/Paycompute.git"
-              class="project-link"
-              target="_blank"
-              >Source Code</a
-            >
-             
-          </div>
-          <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">MongoDB - Spring Boot</h2>
-              <h4 class="project-technologies">CRUD /MONGODB COMPAS /WIDE RANGE OF QUERIES </h4>
-            </div>
-            <img src="images/download_spring_mongo.jpg" class="project-img" />
-            <a
-              href="https://github.com/ghgasimovhikmat/springRestApi-MongoDb.git"
-              class="project-link"
-              target="_blank"
-              >Source Code</a
-            >
-          </div>
-             <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">Angular - HTTP</h2>
-              <h4 class="project-technologies">Typescript /Rxjs /Javascript /CSS</h4>
-            </div>
-            <img src="images/download_1.png" class="project-img" />
-            <a
-              href="https://github.com/ghgasimovhikmat/httpangular.git"
-              class="project-link"
-              target="_blank"
-              >Source Code</a
-            >
-             </div>
-          <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">Client Panel</h2>
-              <h4 class="project-technologies">Angular2 + /Typescript /CSS /Bootstrap</h4>
-            </div>
-            <img src="images/download.png" class="project-img" />
-            <a
-              href="https://github.com/ghgasimovhikmat/ClientPanel.git"
-              class="project-link"
-              target="_blank"
-              >Source Code</a
-            >
-             </div>
-          <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">User Blogen</h2>
-              <h4 class="project-technologies">Html /CSS /Bootstrap</h4>
-            </div>
-            <img src="images/bootstrap-5-alpha-2.png" class="project-img" />
-            <a
-              href="https://ghgasimovhikmat.github.io/usersBlogen/"
-              class="project-link"
-              target="_blank"
-              >Live</a
-            >
-             </div>
-            <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">Unit/Moq Booking Helper</h2>
-              <h4 class="project-technologies">Unit /Moq /Dependency Injection</h4>
-            </div>
-            <img src="images/images.png" class="project-img" />
-            <a
-              href="https://github.com/ghgasimovhikmat/NUnitBooking"
-              class="project-link"
-              target="_blank"
-              >Source Code</a
-            >
-             </div>
-      </section>
-      <!-- End of Section 3 -->
+    <!-- Projects Section -->
+    <!-- Simplified for brevity -->
+    <!-- Section 3 -->
+    <section class="section-3" id="section-3">
+      <h1 class="section-heading section-3-heading">My Projects</h1>
 
-      <!-- Section 4 -->
-      <section class="section-4" id="section-4">
-        <h1 class="section-heading section-4-heading">Contact Me</h1>
-        <form action="https://formsubmit.co/6558831313d4768cb3bd40f882d807e9" method="post" class="contact-form center">
-          <input name="name" type="text" placeholder="Name" required/>
-          <input name="email" type="email" placeholder="Clients Email" required/> 
-          <textarea name="message" placeholder="Message" required></textarea>
-          <input type="submit" value="Send" class="contact-form-btn" />
-        </form>
-      </section>
-      <!-- End of Section 4 -->
-
-      <!-- Section 5 -->
-      <footer class="section-5 center">
-        <div class="social-media">
-          <a href="#none" class="social-media-link">
-            <i class="fab fa-github-square"></i>
-          </a>
-          <a href="#none" class="social-media-link">
-            <i class="fab fa-youtube"></i>
-          </a>
-          <a href="#none" class="social-media-link">
-            <i class="fab fa-facebook-square"></i>
-          </a>
-          <a href="#none" class="social-media-link">
-            <i class="fab fa-instagram-square"></i>
-          </a>
-        </div>
-        <p class="copyright">
-          Copyright &copy; CodeAndCreate. All Rights Reserved
-        </p>
-      </footer>
-      <!-- End of Section 5 -->
+    <!-- Filter Buttons -->
+    <div class="text-center mb-5">
+      <button class="btn btn-secondary filter-btn active" data-category="all">All</button>
+      <button class="btn btn-secondary filter-btn" data-category="mvc">MVC</button>
+      <button class="btn btn-secondary filter-btn" data-category="angular">.Net Core /Angular</button>
+      <button class="btn btn-secondary filter-btn" data-category="java">Java</button>
+      <button class="btn btn-secondary filter-btn" data-category="other">Others</button>
+    </div>
+    <!-- Cards Section -->
+<div class="cards-wrapper">
+    <!-- Card 1 -->
+    <div class="card project angular">
+      <img src="images/maxresdefault.jpg" alt="Course Image">
+      <div class="card-body">
+       
+        <h3 class="course-title">ECommerce</h3>
+        <p class="course-description">.Net Core /Angular-Typescript /Containerization with Docker
+          /Impl Generic Repository Pattern /Database(SqlLite,Redis) /Database Engineering with .Net Core /Designing Templates using Bootstrap, Font Awesome 
+          /Designing Reactive Forms in Angular /Front-End Development with Angular /Performance Optimization in .Net
+          /Impl Repo Pattern /Specification Pattern </p>
+       
+        <a href="https://github.com/ghgasimovhikmat/dotnet-angular.git" class="project-link" target="_blank">Source
+            Code</a>
+      </div>
     </div>
 
-    <script src="script.js"></script>
-  </body>
+    <div class="card project mvc">
+        <img src="images/microservices.png" alt="Course Image">
+        <div class="card-body">
+         
+          <h3 class="course-title">EShopping</h3>
+          <p class="course-description">Microservices /CQRS Pattern /Net Core /Docker /Multiple technologies together /Mediator Pattern /Containerize entire solution</p>
+         
+          <a href="https://github.com/ghgasimovhikmat/EShopping.git" class="project-link" target="_blank">Source
+              Code</a>
+        </div>
+      </div>
+      <div class="card project mvc">
+        <img src="images/images.jpg" alt="Course Image">
+        <div class="card-body">
+         
+          <h3 class="course-title">Pay Compute</h3>
+          <p class="course-description">Multi-layered architecture and their dependencies on each other /Implementing several business logic /Tracking changes in project files using GIT
+            /Action Methods, Action Methods with Parameter /Query Entity Data Models using LINQ - Inserting, Updating, Retrieving, Filtering, Ordering 
+          /EF Core to initialize the database /ConnectStrings in AppSetting .json file (for both local and remote SQL Server Databases)
+        /Data Migration from SQL Server LocalDb  /Pushing to final Source Code to a Remote Repo /Class Libraries 
+      / Interfaces and their Imp /Register DI /EF Core to use SQL Server /Security - Preventing Cross-Site Request Forgery (CSRF) attacks, Identity, Authentication & Authorisation
+    /Deploying Application to Azure Cloud</p>
+         
+          <a href="https://github.com/ghgasimovhikmat/Paycompute.git" class="project-link" target="_blank">Source
+              Code</a>
+        </div>
+      </div>
+      <div class="card project mvc">
+        <img src="images/Clean Architecture With dotNET.png" alt="Course Image">
+        <div class="card-body">
+         
+          <h3 class="course-title">HRManagment</h3>
+          <p class="course-description">.Net Core /SOLID Principles /MediatR, Automapper, Fluent API /Swagger /CQRS Pattern /Unit Testing ,Moq </p>
+         
+          <a href="https://github.com/ghgasimovhikmat/Net-Api-Solid-and-Clean-Architecture.git " class="btn btn-primary project-link"
+            target="_blank">Source Code</a>
+        </div>
+      </div>
+
+      <div class="card project mvc">
+        <img src="images/net_docker.png" alt="Course Image">
+        <div class="card-body">
+         
+          <h3 class="course-title">Shopping Api and Client</h3>
+          <p class="course-description">.Net Core /Create and Build Docker Images /Containerize Microservices on Docker Environment /Docker Compose Microservices /Pushing Docker Images to DockerHub /Deploying multi-container microservices</p>
+         
+          <a href="https://github.com/ghgasimovhikmat/.net-devops.git" class="btn btn-primary project-link"
+            target="_blank">Source Code</a>
+        </div>
+      </div>
+
+      <div class="card project mvc">
+        <img src="images/web_api.png" alt="Course Image">
+        <div class="card-body">
+         
+          <h3 class="course-title">Hosteling API</h3>
+          <p class="course-description">.Net Core /EF CORE /Asynchronous Programming/ AutoMapper and Data Transfer Objects (DTOs) /Manage and Track Changes using GitHub /API Versioning</p>
+         
+          <a href="https://github.com/ghgasimovhikmat/HotelListingAPI.git" class="btn btn-primary project-link"
+            target="_blank">Source Code</a>
+        </div>
+      </div>
+      <div class="card project java ">
+        <img src="images/images_1.jpg" alt="Course Image">
+        <div class="card-body">
+         
+          <h3 class="course-title">Blog App</h3>
+          <p class="course-description">JAVA 8+ /SPRING BOOT /MVC /HIBERNATE</p>
+         
+          <a href="https://github.com/ghgasimovhikmat/EShopping.git" class="project-link" target="_blank">Source
+              Code</a>
+        </div>
+      </div>
+
+      
+
+      <div class="card project angular">
+        <img src="images/9e007b304c.png" alt="Course Image">
+        <div class="card-body">
+         
+          <h3 class="course-title">.Net Angular E-commerce</h3>
+          <p class="course-description">ASPNET WEB APIs /ANGULAR CLI /EF CORE /SQL </p>
+         
+          <a href="https://github.com/ghgasimovhikmat/.Net-Angular.git" class="project-link" target="_blank">Source
+              Code</a>
+        </div>
+      </div>
+
+
+      <div class="card project java">
+        <img src="images/spring_cloud_download.png" alt="Course Image">
+        <div class="card-body">
+         
+          <h3 class="course-title">Spring Cloud</h3>
+          <p class="course-description">EUREKA SERVER /REST API </p>
+         
+          <a href="https://github.com/ghgasimovhikmat/SpringCloud.git" class="project-link" target="_blank">Source
+              Code</a>
+        </div>
+      </div>
+
+     
+
+      <div class="card project java">
+        <img src="images/download_spring_mongo.jpg" alt="Course Image">
+        <div class="card-body">
+         
+          <h3 class="course-title">MongoDB  Spring Boot</h3>
+          <p class="course-description">CRUD /MONGODB COMPAS /WIDE RANGE OF QUERIES  </p>
+         
+          <a href="https://github.com/ghgasimovhikmat/springRestApi-MongoDb.git" class="project-link" target="_blank">Source
+              Code</a>
+        </div>
+      </div>
+
+      <div class="card project angular">
+        <img src="images/download_1.png" alt="Course Image">
+        <div class="card-body">
+         
+          <h3 class="course-title">Angular  HTTP</h3>
+          <p class="course-description">Typescript /Rxjs /Javascript /CSS </p>
+         
+          <a href="https://github.com/ghgasimovhikmat/httpangular.git" class="project-link" target="_blank">Source
+              Code</a>
+        </div>
+      </div>
+      <div class="card project azure">
+        <img src="images/azure.png" alt="Course Image">
+        <div class="card-body">
+         
+          <h3 class="course-title">.Net Core  Azure</h3>
+          <p class="course-description">Azure Blob Storage / Azure Logic Apps / Azure Functions</p>
+         
+          <a href="https://github.com/ghgasimovhikmat/AzureBlobProject.git" class="project-link" target="_blank">Source
+              Code</a>
+        </div>
+      </div>
+
+      <div class="card project angular">
+        <img src="images/download.png" alt="Course Image">
+        <div class="card-body">
+         
+          <h3 class="course-title">Client Panel</h3>
+          <p class="course-description">Angular2 + /Typescript /CSS /Bootstrap </p>
+         
+          <a href="https://github.com/ghgasimovhikmat/ClientPanel.git" class="project-link" target="_blank">Source
+            Code</a>
+        </div>
+      </div>
+  
+      <div class="card project">
+        <img src="images/bootstrap-5-alpha-2.png" alt="Course Image">
+        <div class="card-body">
+         
+          <h3 class="course-title">User Blogen</h3>
+          <p class="course-description">Html5 /CSS3 /Bootstrap4/5 </p>
+         
+          <a href="https://ghgasimovhikmat.github.io/usersBlogen/"  class="btn btn-primary project-link" target="_blank">Live</a>
+        </div>
+      </div>
+
+
+      <div class="card project">
+        <img src="images/images.png" alt="Course Image">
+        <div class="card-body">
+         
+          <h3 class="course-title">Unit and Moq Booking Helper</h3>
+          <p class="course-description">Unit /Moq /Dependency Injection</p>
+         
+          <a href="https://github.com/ghgasimovhikmat/NUnitBooking" class=" btn btn-primary project-link" target="_blank">Source Code</a>
+        </div>
+      </div>
+    <!-- Repeat for other cards -->
+  </div>
+  
+
+      <div class="projects-wrapper center">
+    </div>
+
+    </section>
+    <!-- End of Section 3 -->
+    <!-- Contact Section -->
+    <!-- Simplified for brevity -->
+    <!-- Section 4 -->
+    <section class="section-4" id="section-4">
+      <h1 class="section-heading section-4-heading">Contact Me</h1>
+      <form action="https://formsubmit.co/6558831313d4768cb3bd40f882d807e9" method="post" class="contact-form center">
+        <input name="name" type="text" placeholder="Name" required />
+        <input name="email" type="email" placeholder="Clients Email" required />
+        <textarea name="message" placeholder="Message" required></textarea>
+        <input type="submit" value="Send" class="contact-form-btn" />
+      </form>
+    </section>
+    <!-- End of Section 4 -->
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 text-center footer">
+      <div class="container">
+        <div class="social-media mb-3">
+          <a href="#" class="mx-2"><i class="fab fa-github-square fa-2x"></i></a>
+          <a href="#" class="mx-2"><i class="fab fa-youtube fa-2x"></i></a>
+          <a href="#" class="mx-2"><i class="fab fa-facebook-square fa-2x"></i></a>
+
+          <a href="#" class="mx-2"><i class="fab fa-instagram-square fa-2x"></i></a>
+        </div>
+        <p>
+          Copyright &copy; CodeAndCreate. All Rights Reserved
+        </p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Bootstrap and jQuery JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+
+</body>
+
 </html>
